@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../dist/regrid.css">
+		<style>
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.row { margin: 1em 0; }
+.block {
+	height: 100px;
+	background: red;
+}
+.block:nth-of-type(2n) {
+	background: orange;
+}
+.block:nth-of-type(3n) {
+	background: yellow;
+}
+.block:nth-of-type(4n) {
+	background: green;
+}
+.block:nth-of-type(5n) {
+	background: blue;
+}
+.block:nth-of-type(6n) {
+	background: purple;
+}
+		</style>
+	</head>
+	<body>
+		<h1>Non-Responsive<h1>
+		<div class="row">
+			<div class="col block"></div>
+		</div>
+		<div class="row">
+			<div class="col block"></div>
+			<div class="col block"></div>
+		</div>
+		<div class="row">
+			<div class="col block"></div>
+			<div class="col block"></div>
+			<div class="col block"></div>
+		</div>
+		<div class="row">
+			<div class="col block"></div>
+			<div class="col block"></div>
+			<div class="col block"></div>
+			<div class="col block"></div>
+		</div>
+		<h1>Responsive<h1>
+		<div class="row">
+			<div class="col-sm-12 col-md-6 col-lg-3 block"></div>
+			<div class="col-sm-12 col-md-6 col-lg-3 block"></div>
+			<div class="col-sm-12 col-md-6 col-lg-3 block"></div>
+			<div class="col-sm-12 col-md-6 col-lg-3 block"></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 block"></div>
+			<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 block"></div>
+			<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 block"></div>
+			<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 block"></div>
+			<div class="col-sm-12 col-md-6 col-lg-4 col-xl-6 block"></div>
+			<div class="col-sm-12 col-md-6 col-lg-4 col-xl-6 block"></div>
+		</div>
+	</body>
+</html>
