@@ -1,8 +1,10 @@
-$grid-columns: 12;
-$grid-break-md: 640px;
-$grid-break-lg: 960px;
-$grid-break-xl: 1200px;
+/* Variables */
+$grid-columns: 12 !default;
+$grid-break-md: 640px !default;
+$grid-break-lg: 960px !default;
+$grid-break-xl: 1200px !default;
 
+/* Mixins */
 @mixin media-sm {
 	@media only screen and (max-width: #{$grid-break-md - 1}) {
 		@content;
@@ -49,7 +51,7 @@ $grid-break-xl: 1200px;
 
 .row { @include grid-row; }
 
-.col { 
+.col {
 	@include grid-col;
 	flex-grow: 1;
 	flex-basis: 0;
@@ -65,7 +67,7 @@ $grid-break-xl: 1200px;
 }
 
 /* col-md */
-@include media-md {
+@include media-md 	{
 	@for $i from 1 through $grid-columns {
 		.col-md-#{$i} {
 			@include grid-col;
