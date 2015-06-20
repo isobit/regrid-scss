@@ -1,7 +1,7 @@
 {
   "name": "regrid-scss",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple SCSS grid framework inspired by Flexbox Grid and Bootstrap Grid",
   "main": "index.js",
   "scripts": {
     "sass:uncompressed": "node-sass src/regrid_bourbon.scss dist/regrid.css",
